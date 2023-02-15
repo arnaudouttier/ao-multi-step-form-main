@@ -29,7 +29,7 @@ import FormCongratulations from './components/FormCongratulations.vue'
 
 <style lang="scss" >
 #app {
-  height: 100lvh;
+  height: 100dvh;
   display: grid;
   grid-template-rows: 20vh auto 10vh;
   grid-template-areas:
