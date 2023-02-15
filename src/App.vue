@@ -1,5 +1,5 @@
 <script setup>
-import SIdebar from './components/Sidebar.vue'
+import Sidebar from './components/Sidebar.vue'
 import FormPersonalInfo from './components/FormPersonalInfo.vue'
 import FormPlans from './components/FormPlans.vue'
 import FormAddons from './components/FormAddons.vue'
@@ -12,7 +12,7 @@ import FormCongratulations from './components/FormCongratulations.vue'
 
 <template>
 
-  <SIdebar />
+  <Sidebar />
 
   <main id="main">
     <FormPersonalInfo v-if="$store.state.currentStepNumber === 1" />
