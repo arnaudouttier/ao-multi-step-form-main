@@ -1,0 +1,35 @@
+/* Base */
+body,
+ul,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+}
+
+/* Buttons */
+button,
+.btn {
+  border: 0;
+  background-color: transparent;
+  padding-block: 15px;
+  padding-inline: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: lightblue;
+}
