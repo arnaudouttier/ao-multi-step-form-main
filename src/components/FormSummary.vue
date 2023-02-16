@@ -8,15 +8,18 @@
 
     <div class="summary-plan">
       <div class="group">
-        <h2 class="plan-title">{{ $store.state.userName }}</h2>
+        <h2 class="plan-title">{{ $store.state.selectedPlan }} <span>{{
+          $store.state.selectedOptions == 'monthly' ? 'mo'
+            : 'yr'
+        }}</span></h2>
         <button class="btn">Change</button>
       </div>
       <h3 class="total"></h3>
     </div>
 
-    <div class="summary-addons">
-      <div class="addon-title"> {{ $store.state.userEmail }}</div>
-      <h3 class="total"></h3>
+    <div class="summary-addons" v-for="(addon, index) in $store.state.addonsSelected" :key="index">
+      <div class="addon-title"> {{ addon }} </div>
+      <h3 class="total"><span>{{ $store.state.selectedOptions == 'monthly' ? 'mo' : 'yr' }}</span></h3>
     </div>
 
     <div class="summary-total">

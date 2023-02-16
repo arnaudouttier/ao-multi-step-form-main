@@ -8,7 +8,7 @@
     <div class="radio-group" v-for="(plan, index) in $store.state.plans" :key="index">
       <input type="radio" :id="plan.title" :value="plan.title" v-model="$store.state.selectedPlan" />
       <label :for="plan.title">{{ plan.title }}</label>
-      <h3>{{ plan.price }} <span>/mo</span></h3>
+      <h3>{{ plan.price }} <span>{{ $store.state.selectedOptions == 'monthly' ? 'mo' : 'yr' }}</span></h3>
     </div>
     <select v-model="$store.state.selectedOptions">
       <option v-for="option in $store.state.options" :value="option.value">
