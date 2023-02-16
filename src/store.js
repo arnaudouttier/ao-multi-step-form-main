@@ -31,7 +31,7 @@ const state = {
             extra: "2 months free",
         }
     ],
-    selected: 'monthly',
+    selectedOptions: 'monthly',
     options: [
         { text: 'Monthly', value: 'monthly' },
         { text: 'Yearly', value: 'yearly' }

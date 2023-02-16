@@ -5,23 +5,24 @@
     <aside id="sidebar">
         <ul>
             <li>
-                <span :class="{ active: $store.currentStepNumber === 1 }">1</span>
+                <span :class="{ active: $store.state.currentStepNumber === 1 }">1</span>
                 <h2>Step 1</h2>
                 <h3> Your info</h3>
             </li>
             <li>
-                <span :class="{ active: $store.currentStepNumber === 2 }">2</span>
+                <span :class="{ active: $store.state.currentStepNumber === 2 }">2</span>
                 <h2>Step 2</h2>
                 <h3> Your info</h3>
 
             </li>
             <li>
-                <span :class="{ active: $store.currentStepNumber === 3 }">3</span>
+                <span :class="{ active: $store.state.currentStepNumber === 3 }">3</span>
                 <h2>Step 3</h2>
                 <h3> Your info</h3>
             </li>
             <li>
-                <span :class="{ active: $store.currentStepNumber === 4 || $store.currentStepNumber === 5 }">4</span>
+                <span
+                    :class="{ active: $store.state.currentStepNumber === 4 || $store.state.currentStepNumber === 5 }">4</span>
                 <h2>Step 4</h2>
                 <h3> Your info</h3>
             </li>

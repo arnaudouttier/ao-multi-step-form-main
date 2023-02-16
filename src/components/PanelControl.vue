@@ -22,7 +22,7 @@ const addProductCart = (value) => {
         userEmail: value.userEmail,
         userPhone: value.userPhone,
         userPlan: value.selectedPlan,
-        planFormule: value.selected,
+        planFormule: value.selectedOptions,
         addonFormule: value.addonsSelected
     })
 

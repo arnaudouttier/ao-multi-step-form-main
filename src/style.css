@@ -13,7 +13,7 @@ ul {
 @media (min-width: 992px) {
   body {
     display: grid;
-    place-items: center;
+    place-content: center;
     height: 100vh;
   }
 }

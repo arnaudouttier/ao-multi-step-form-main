@@ -10,12 +10,12 @@
       <label :for="plan.title">{{ plan.title }}</label>
       <h3>{{ plan.price }} <span>/mo</span></h3>
     </div>
-    <select v-model="$store.state.selected">
+    <select v-model="$store.state.selectedOptions">
       <option v-for="option in $store.state.options" :value="option.value">
         {{ option.text }}
       </option>
     </select>
-    <div>Selected: {{ $store.state.selected }}</div>
+    <div>Selected: {{ $store.state.selectedOptions }}</div>
   </section>
 </template>
 
