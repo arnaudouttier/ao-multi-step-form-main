@@ -23,7 +23,7 @@ const state = {
             price: 12,
             YearPrice: 120,
             extra: "2 months free",
-            icon: "../assets/images/icon-advanced.svg"
+            icon: "icon-advanced.svg"
         },
         {
             id: 3,
@@ -31,7 +31,7 @@ const state = {
             price: 15,
             YearPrice: 150,
             extra: "2 months free",
-            icon: "../assets/images/icon-pro.svg"
+            icon: "icon-pro.svg"
         }
     ],
     selectedOptions: 'monthly',
