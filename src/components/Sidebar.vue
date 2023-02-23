@@ -41,7 +41,7 @@
 <style lang="scss" scoped>
 #sidebar {
     grid-area: sidebar;
-    background-image: url("src/assets/images/bg-sidebar-mobile.svg");
+    background-image: url("../assets/images/bg-sidebar-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -81,7 +81,7 @@
     #sidebar {
         padding-top: 0;
         height: 100%;
-        background-image: url("src/assets/images/bg-sidebar-desktop.svg");
+        background-image: url("../assets/images/bg-sidebar-desktop.svg");
 
         ul {
             width: 80%;
