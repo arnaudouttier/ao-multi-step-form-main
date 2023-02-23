@@ -11,7 +11,8 @@
     </div>
 
     <div class="card__main">
-      <div class="checkbox-group" v-for="(addon, index) in $store.state.addons" :key="index">
+      <div class="checkbox-group" :class="{ active: $store.state.addonsSelected == addon.title }"
+        v-for="(addon, index) in $store.state.addons" :key="index">
         <input type="checkbox" :id="addon.titleSlug" :value="addon.title" v-model="$store.state.addonsSelected" />
         <div class="checkbox-details">
           <label :for="addon.titleSlug">{{ addon.title }}</label>
