@@ -15,7 +15,7 @@ const state = {
             price: 9,
             YearPrice: 90,
             extra: "2 months free",
-            icon: "../assets/images/icon-arcade.svg"
+            icon: "icon-arcade.svg"
         },
         {
             id: 2,
