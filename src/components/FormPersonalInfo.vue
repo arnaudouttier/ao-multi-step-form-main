@@ -4,7 +4,7 @@
 <template>
   <section class="card personal-info">
     <div class="card__header">
-      <h2> Personnal info</h2>
+      <h2> Personal info</h2>
       <p>Please provide your name, address, and phone number.</p>
     </div>
 

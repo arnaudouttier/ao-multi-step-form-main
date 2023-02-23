@@ -17,8 +17,8 @@
 }
 
 .card__header h2 {
-  /* 1.5rem(24px) @ 23.4375rem(375px) increasing to 2rem(32px) @ 62rem(992px) */
-  font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.234375rem) * 1.2966)), 2rem);
+  /* 1.6rem(25.6px) @ 23.4375rem(375px) increasing to 2rem(32px) @ 62rem(992px) */
+  font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.234375rem) * 1.0373)), 2rem);
   color: var(--blue_400);
   margin-bottom: 1rem;
 }
