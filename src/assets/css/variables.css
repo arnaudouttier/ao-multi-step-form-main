@@ -1,0 +1,22 @@
+/* variables */
+
+:root {
+  /* Font */
+  --font_primary: "Ubuntu", sans-serif;
+
+  /* Colors */
+  --blue_100: hsl(206, 94%, 87%);
+  --blue_200: hsl(228, 100%, 84%);
+  --blue_300: hsl(243, 100%, 62%);
+  --blue_400: hsl(213, 96%, 18%);
+
+  --red: hsl(354, 84%, 57%);
+
+  --gray_100: hsl(229, 24%, 87%);
+  --gray_200: hsl(231, 11%, 63%);
+
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+
+  --white: hsl(0, 0%, 100%);
+}

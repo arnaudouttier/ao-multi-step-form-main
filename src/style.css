@@ -1,35 +1,4 @@
-/* Base */
-body,
-ul,
-h2 {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-@media (min-width: 992px) {
-  body {
-    display: grid;
-    place-content: center;
-    height: 100vh;
-  }
-}
-
-/* Buttons */
-button,
-.btn {
-  border: 0;
-  background-color: transparent;
-  padding-block: 15px;
-  padding-inline: 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn--primary {
-  color: #fff;
-  background-color: lightblue;
-}
+@import "./assets/css/variables.css";
+@import "./assets/css/base.css";
+@import "./assets/css/buttons.css";
+@import "./assets/css/card.css";
