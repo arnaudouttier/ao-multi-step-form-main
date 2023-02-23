@@ -13,7 +13,7 @@ button,
 .btn--primary {
   padding-block: 15px;
   padding-inline: 20px;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #fff;
   background-color: var(--blue_400);
 }

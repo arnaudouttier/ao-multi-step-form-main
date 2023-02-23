@@ -15,7 +15,8 @@ body {
 body,
 ul,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -30,7 +31,12 @@ input {
   padding-block: 1rem;
   padding-inline: 0.5rem;
   border: 1px solid var(--gray_100);
-  border-radius: 3px;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  color: var(--blue_400);
 }
 
 @media (min-width: 992px) {

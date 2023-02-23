@@ -9,33 +9,51 @@
       <p>You have the option of monthly or yearly billing.</p>
     </div>
 
-    <div class="radio-group" v-for="(plan, index) in $store.state.plans" :key="index">
-      <input type="radio" :id="plan.title" :value="plan.title" v-model="$store.state.selectedPlan" />
-      <label :for="plan.title">{{ plan.title }}</label>
-      <h3>{{ plan.price }} <span>{{ $store.state.selectedOptions == 'monthly' ? 'mo' : 'yr' }}</span></h3>
+    <div class="card__main">
+      <div class="radio-group" v-for="(plan, index) in $store.state.plans" :key="index">
+        <input type="radio" :id="plan.title" :value="plan.title" v-model="$store.state.selectedPlan" />
+        <label :for="plan.title">{{ plan.title }}</label>
+        <h3>{{ plan.price }} <span>{{ $store.state.selectedOptions == 'monthly' ? 'mo' : 'yr' }}</span></h3>
+      </div>
     </div>
-    <select v-model="$store.state.selectedOptions">
-      <option v-for="option in $store.state.options" :value="option.value">
-        {{ option.text }}
-      </option>
-    </select>
-    <div>Selected: {{ $store.state.selectedOptions }}</div>
+
+    <div class="card__footer">
+      <select v-model="$store.state.selectedOptions">
+        <option v-for="option in $store.state.options" :value="option.value">
+          {{ option.text }}
+        </option>
+      </select>
+      <div>Selected: {{ $store.state.selectedOptions }}</div>
+    </div>
+
   </section>
 </template>
 
 <style scoped>
-#form-plans {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
 input[type="radio"] {
   display: none;
 }
 
+.card__main {
+  margin-bottom: 3rem;
+}
 
-label {
-  cursor: pointer;
+.card__main>div {
+  padding: 1rem;
+  border: 1px solid var(--gray_100);
+  border-radius: 6px;
+}
+
+
+@media(min-width:992px) {
+  .card__main {
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .card__main>div {
+    flex: 1;
+  }
+
 }
 </style>
