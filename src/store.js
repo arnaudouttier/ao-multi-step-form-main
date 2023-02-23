@@ -65,6 +65,9 @@ const state = {
 
 // getters
 const getters = {
+    priceCalc(state) {
+        return state.user;
+    }
 }
 
 // actions

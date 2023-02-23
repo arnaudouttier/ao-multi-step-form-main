@@ -11,7 +11,6 @@ import FormCongratulations from './components/FormCongratulations.vue'
 </script>
 
 <template>
-
   <Sidebar />
 
   <main id="main">
@@ -24,7 +23,6 @@ import FormCongratulations from './components/FormCongratulations.vue'
   <!-- #main -->
 
   <PanelControl />
-
 </template>
 
 <style lang="scss" >
@@ -40,7 +38,6 @@ import FormCongratulations from './components/FormCongratulations.vue'
 
 #main {
   grid-area: main;
-  background-color: pink;
   position: relative;
 }
 
@@ -49,16 +46,16 @@ import FormCongratulations from './components/FormCongratulations.vue'
   top: -10%;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-  height: 100%;
-  color: #fff;
-  background-color: black;
+  width: 85%;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  color: var(--gray_200);
+  background-color: var(--white);
   border-radius: 10px;
 }
 
 
 @media (min-width: 992px) {
-
   #app {
     width: 80vw;
     height: 70vh;
@@ -70,6 +67,7 @@ import FormCongratulations from './components/FormCongratulations.vue'
   }
 
   .card {
+    height: 100%;
     position: unset;
     transform: unset;
     width: 100%;

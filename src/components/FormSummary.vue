@@ -3,14 +3,17 @@
 
 <template>
   <div class="card summary">
-    <h2>Finishing up</h2>
-    <p>Double-check everything looks OK before confirming.</p>
+
+    <div class="card__header">
+      <h2>Finishing up</h2>
+      <p>Double-check everything looks OK before confirming.</p>
+    </div>
 
     <div class="summary-plan">
       <div class="group">
         <h2 class="plan-title">{{ $store.state.selectedPlan }} <span>{{
           $store.state.selectedOptions == 'monthly' ? 'mo'
-            : 'yr'
+          : 'yr'
         }}</span></h2>
         <button class="btn">Change</button>
       </div>
@@ -29,7 +32,6 @@
     </div>
 
   </div>
-
 </template>
 
 <style scoped>

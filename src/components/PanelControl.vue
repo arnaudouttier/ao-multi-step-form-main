@@ -37,7 +37,7 @@ const addProductCart = (value) => {
 <template>
     <section class="panel-ctrl">
         <div class="container">
-            <button class="btn btn--primary btn-back"
+            <button class="btn btn--secondary btn-back"
                 v-show="store.state.currentStepNumber > 1 && store.state.currentStepNumber < 5" @click=goBack>Go
                 Back</button>
             <button v-if="store.state.currentStepNumber < 4" class="btn btn--primary btn-next" @click=goNext>Next
@@ -52,7 +52,7 @@ const addProductCart = (value) => {
 <style lang="scss" scoped>
 .panel-ctrl {
     grid-area: panel;
-    background-color: lightseagreen;
+    background-color: var(--white);
 
     .container {
         width: 90%;

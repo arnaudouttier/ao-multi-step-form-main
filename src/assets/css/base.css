@@ -1,0 +1,42 @@
+/* base */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font_primary);
+  background-color: var(--magnolia);
+}
+
+/* Base */
+body,
+ul,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* inputs */
+input {
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: 0.5rem;
+  border: 1px solid var(--gray_100);
+  border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+  body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+}

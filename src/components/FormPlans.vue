@@ -3,8 +3,12 @@
 
 <template>
   <section class="card plans">
-    <h2 class="title">Select your plan</h2>
-    <p>You have the option of monthly or yearly billing.</p>
+
+    <div class="card__header">
+      <h2 class="title">Select your plan</h2>
+      <p>You have the option of monthly or yearly billing.</p>
+    </div>
+
     <div class="radio-group" v-for="(plan, index) in $store.state.plans" :key="index">
       <input type="radio" :id="plan.title" :value="plan.title" v-model="$store.state.selectedPlan" />
       <label :for="plan.title">{{ plan.title }}</label>
@@ -29,6 +33,7 @@
 input[type="radio"] {
   display: none;
 }
+
 
 label {
   cursor: pointer;

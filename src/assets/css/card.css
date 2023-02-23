@@ -1,0 +1,8 @@
+/* .card */
+.card__header {
+  margin-bottom: 2rem;
+}
+
+.card__header h2 {
+  color: var(--blue_400);
+}

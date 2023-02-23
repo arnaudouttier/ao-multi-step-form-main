@@ -1,0 +1,32 @@
+/* Buttons */
+
+/* Buttons */
+button,
+.btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-weight: 600;
+}
+
+.btn--primary {
+  padding-block: 15px;
+  padding-inline: 20px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: var(--blue_400);
+}
+
+.btn--primary:hover {
+  background-color: hsl(213, 96%, 18%, 0.9);
+}
+
+.btn--secondary {
+  color: var(--gray_200);
+  background-color: var(--white);
+}
+
+.btn--secondary:hover {
+  color: var(--blue_400);
+}
