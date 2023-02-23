@@ -1,5 +1,5 @@
 <script setup>
-const rootImagesPath = "../assets/images/"
+const rootImagesPath = "../assets/images"
 
 </script>
 
