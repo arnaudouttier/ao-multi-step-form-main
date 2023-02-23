@@ -1,5 +1,4 @@
 <script setup>
-import imageData from '../assets/images/icon-arcade.svg';
 </script>
 
 <template>
@@ -12,7 +11,7 @@ import imageData from '../assets/images/icon-arcade.svg';
 
     <div class="card__main">
       <div class="radio-group" v-for="(plan, index) in $store.state.plans" :key="index">
-        <img :src="imageData" alt="icon plan">
+        <img :src="`/assets/images/${plan.icon}`" alt="icon plan">
         <input type="radio" :id="plan.title" :value="plan.title" v-model="$store.state.selectedPlan" />
         <label :for="plan.title">{{ plan.title }}</label>
         <h3>{{ plan.price }} <span>{{ $store.state.selectedOptions == 'monthly' ? 'mo' : 'yr' }}</span></h3>
