@@ -1,7 +1,7 @@
 /* .card */
 .card {
   position: absolute;
-  top: -10%;
+  top: -12%;
   left: 50%;
   transform: translateX(-50%);
   width: 85%;
@@ -25,7 +25,7 @@
 .card__main {
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 @media (min-width: 992px) {
