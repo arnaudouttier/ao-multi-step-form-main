@@ -49,7 +49,7 @@
     ul {
         display: flex;
         justify-content: center;
-        column-gap: 2rem;
+        column-gap: 1.2rem;
         margin-top: 2rem;
 
 
