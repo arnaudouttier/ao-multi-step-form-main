@@ -10,6 +10,7 @@
     </div>
 
     <div class="card__main">
+
       <div class="summary-plan">
         <div class="group">
           <h2 class="plan-title">{{ $store.state.selectedPlan }} <span>{{
@@ -26,6 +27,9 @@
         <h3 class="total"><span>{{ $store.state.selectedOptions == 'monthly' ? 'mo' : 'yr' }}</span></h3>
       </div>
 
+    </div>
+
+    <div class="card__footer">
       <div class="summary-total">
         <h2>Total <span></span></h2>
         <div class="summary-total-bill">
@@ -36,10 +40,28 @@
   </section>
 </template>
 
-<style scoped>
-p,
-h2 {
-  margin: 0;
-  padding: 0;
+<style lang="scss" scoped>
+.card__main {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: var(--alabaster);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.summary-plan {
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--gray_100);
+
+  .btn {
+    font-weight: 400;
+    color: var(--gray_200);
+    text-decoration: underline;
+  }
+}
+
+.summary-addons {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
