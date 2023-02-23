@@ -77,4 +77,15 @@ const addProductCart = (value) => {
         }
     }
 }
+
+@media(min-width:992px) {
+    .panel-ctrl {
+
+        .container {
+            max-width: 70%;
+            margin-inline: auto;
+
+        }
+    }
+}
 </style>

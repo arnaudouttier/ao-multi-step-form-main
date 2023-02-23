@@ -41,37 +41,20 @@ import FormCongratulations from './components/FormCongratulations.vue'
   position: relative;
 }
 
-.card {
-  position: absolute;
-  top: -10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 85%;
-  padding-block: 2rem;
-  padding-inline: 1rem;
-  color: var(--gray_200);
-  background-color: var(--white);
-  border-radius: 10px;
-}
-
 
 @media (min-width: 992px) {
   #app {
-    width: 80vw;
+    width: min(80vw, 992px);
     height: 70vh;
     grid-template-columns: 30% 70%;
     grid-template-areas:
       "sidebar main"
       "sidebar main"
       "sidebar panel";
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
   }
 
-  .card {
-    height: 100%;
-    position: unset;
-    transform: unset;
-    width: 100%;
-    border-radius: 0;
-  }
 }
 </style>

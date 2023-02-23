@@ -44,6 +44,7 @@
     background-image: url("../assets/images/bg-sidebar-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     ul {
         display: flex;
@@ -82,6 +83,7 @@
         padding-top: 0;
         height: 100%;
         background-image: url("../assets/images/bg-sidebar-desktop.svg");
+        border-radius: 1rem;
 
         ul {
             width: 80%;
