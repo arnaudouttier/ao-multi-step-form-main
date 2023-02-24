@@ -31,3 +31,29 @@ button,
 .btn--secondary:hover {
   color: var(--blue_400);
 }
+
+/* button checkbox toggle  -- plans monthly - yearly */
+input[type="checkbox"]:checked + label:before {
+  right: 50%;
+}
+
+label[for="plan-checkbox"] {
+  width: 40px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: var(--blue_400);
+  position: relative;
+}
+
+label[for="plan-checkbox"]:before {
+  content: "";
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: right 0.4s ease;
+}

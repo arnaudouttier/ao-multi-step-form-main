@@ -34,7 +34,7 @@ const state = {
             icon: "icon-pro.svg"
         }
     ],
-    selectedOptions: 'monthly',
+    selectedPlanOptions: true,
     options: [
         { text: 'Monthly', value: 'monthly' },
         { text: 'Yearly', value: 'yearly' }

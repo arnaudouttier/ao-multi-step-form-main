@@ -15,25 +15,27 @@
         <img :src="`/src/assets/images/${plan.icon}`" alt="icon plan">
         <input type="radio" :id="plan.title" :value="plan.title" v-model="$store.state.selectedPlan" />
         <label :for="plan.title">{{ plan.title }}</label>
-        <h3>{{ plan.price }} <span>{{ $store.state.selectedOptions == 'monthly' ? 'mo' : 'yr' }}</span></h3>
+        <h3>{{ plan.price }} <span>{{ $store.state.selectedPlanOptions ? 'yr' : 'mo' }}</span></h3>
       </div>
     </div>
 
     <div class="card__footer">
-      <select v-model="$store.state.selectedOptions">
-        <option v-for="option in $store.state.options" :value="option.value">
-          {{ option.text }}
-        </option>
-      </select>
-      <div>Selected: {{ $store.state.selectedOptions }}</div>
+      <p :class="{ active: $store.state.selectedPlanOptions }">Monthly</p>
+      <input type="checkbox" id="plan-checkbox" v-model="$store.state.selectedPlanOptions">
+      <label for="plan-checkbox"></label>
+      <p :class="{ active: !$store.state.selectedPlanOptions }">Yearly</p>
     </div>
 
   </section>
 </template>
 
-<style scoped>
-input[type="radio"] {
+<style lang="scss" scoped>
+input {
   display: none;
+}
+
+label {
+  cursor: pointer;
 }
 
 .card__main {
@@ -46,6 +48,19 @@ input[type="radio"] {
   border-radius: 6px;
 }
 
+.card__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  padding-block: 1rem;
+  border-radius: 4px;
+  background-color: var(--alabaster);
+
+  p.active {
+    color: var(--blue_400);
+  }
+}
 
 @media(min-width:992px) {
   .card__main {
@@ -56,6 +71,5 @@ input[type="radio"] {
   .card__main>div {
     flex: 1;
   }
-
 }
 </style>
