@@ -9,6 +9,7 @@
       <h2 class="title">Select your plan</h2>
       <p>You have the option of monthly or yearly billing.</p>
     </div>
+    <!-- .card__header -->
 
     <div class="card__main">
       <div class="radio-group" v-for="(plan, index) in $store.state.plans" :key="index">
@@ -18,6 +19,8 @@
         <h3>{{ plan.price }} <span>{{ $store.state.selectedPlanOptions ? 'yr' : 'mo' }}</span></h3>
       </div>
     </div>
+    <!-- .card__main -->
+
 
     <div class="card__footer">
       <p :class="{ active: $store.state.selectedPlanOptions }">Monthly</p>
@@ -25,8 +28,11 @@
       <label for="plan-checkbox"></label>
       <p :class="{ active: !$store.state.selectedPlanOptions }">Yearly</p>
     </div>
+    <!-- .footer -->
+
 
   </section>
+  <!-- ..card.plans -->
 </template>
 
 <style lang="scss" scoped>

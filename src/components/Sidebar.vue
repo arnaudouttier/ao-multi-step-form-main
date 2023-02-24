@@ -35,7 +35,7 @@
             </li>
         </ul>
     </aside>
-    <!-- #aside -->
+    <!-- #sidebar -->
 </template>
 
 <style lang="scss" scoped>

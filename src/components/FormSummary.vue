@@ -8,6 +8,7 @@
       <h2>Finishing up</h2>
       <p>Double-check everything looks OK before confirming.</p>
     </div>
+    <!-- .card__header -->
 
     <div class="card__main">
 
@@ -28,6 +29,7 @@
       </div>
 
     </div>
+    <!-- .card__main -->
 
     <div class="card__footer">
       <div class="summary-total">
@@ -36,8 +38,10 @@
         </div>
       </div>
     </div>
+    <!-- .card__footer -->
 
   </section>
+  <!-- .card.summary -->
 </template>
 
 <style lang="scss" scoped>

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <section class="card congratulations">
+    <section class="card thankyou">
 
         <img src="../assets/images/icon-thank-you.svg" alt="icon thank you">
 
@@ -13,12 +13,14 @@
                 to email us at support@loremgaming.com.
             </p>
         </div>
+        <!-- .card__header -->
 
     </section>
+    <!-- card.thankyou -->
 </template>
 
 <style  lang="scss" scoped>
-.card.congratulations {
+.card.thankyou {
     text-align: center;
     padding-block: 5rem;
 

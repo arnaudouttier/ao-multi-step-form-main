@@ -7,6 +7,8 @@
       <h2> Personal info</h2>
       <p>Please provide your name, address, and phone number.</p>
     </div>
+    <!-- .card__header -->
+
 
     <div class="card__main">
       <label>Name
@@ -20,7 +22,10 @@
         <input type="number" v-model="$store.state.userPhone" placeholder="e.g. +1 234 567 890">
       </label>
     </div>
+    <!-- .card__main -->
+
   </section>
+  <!-- .card.personal-info -->
 </template>
 
 <style  lang="scss" scoped>

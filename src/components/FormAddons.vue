@@ -9,6 +9,7 @@
       <h2> Pick add-ons</h2>
       <p> Add-ons help enhance your gaming experience.</p>
     </div>
+    <!-- .card__header -->
 
     <div class="card__main">
       <div class="checkbox-group" :class="{ active: $store.state.addonsSelected == addon.title }"
@@ -21,8 +22,10 @@
         <h3>{{ addon.price }} <span>/mo</span></h3>
       </div>
     </div>
+    <!-- .card__main -->
 
   </section>
+  <!-- .card.addons -->
 </template>
 
 <style scoped>
