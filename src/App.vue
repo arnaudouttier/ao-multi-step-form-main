@@ -5,8 +5,7 @@ import FormPlans from './components/FormPlans.vue'
 import FormAddons from './components/FormAddons.vue'
 import FormSummary from './components/FormSummary.vue'
 import PanelControl from './components/PanelControl.vue'
-import FormCongratulations from './components/FormCongratulations.vue'
-
+import FormThankYou from './components/FormThankYou.vue'
 
 </script>
 
@@ -18,7 +17,7 @@ import FormCongratulations from './components/FormCongratulations.vue'
     <FormPlans v-if="$store.state.currentStepNumber === 2" />
     <FormAddons v-if="$store.state.currentStepNumber === 3" />
     <FormSummary v-if="$store.state.currentStepNumber === 4" />
-    <FormCongratulations v-if="$store.state.currentStepNumber === 5" />
+    <FormThankYou v-if="$store.state.currentStepNumber === 5" />
   </main>
   <!-- #main -->
 
