@@ -65,6 +65,7 @@ label {
 
   p.active {
     color: var(--blue_400);
+    font-weight: 600;
   }
 }
 
